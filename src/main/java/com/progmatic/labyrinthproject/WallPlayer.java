@@ -21,7 +21,7 @@ public class WallPlayer implements Player {
         List<Direction> d = l.possibleMoves();
         if(first){
             first = false;
-            former = d.get(0);
+            former = d.get(0);              // ah, még sem megy.....
             return d.get(0);
         }
         return null;

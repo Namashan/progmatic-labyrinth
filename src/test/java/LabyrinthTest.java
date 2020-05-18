@@ -5,6 +5,9 @@
  */
 
 import com.progmatic.labyrinthproject.Coordinate;
+import com.progmatic.labyrinthproject.LabyrinthImpl;
+import com.progmatic.labyrinthproject.RandomPlayer;
+import com.progmatic.labyrinthproject.WallPlayer;
 import com.progmatic.labyrinthproject.enums.CellType;
 import com.progmatic.labyrinthproject.enums.Direction;
 import com.progmatic.labyrinthproject.exceptions.CellException;
@@ -16,6 +19,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.nio.file.WatchKey;
+
 import static org.junit.Assert.*;
 
 /**
@@ -382,17 +388,20 @@ public class LabyrinthTest {
     
     // TODO
     private Labyrinth getLabyrinthImpl() {
-        return null;
+        LabyrinthImpl laby = new LabyrinthImpl();
+        return laby;
     }
     
     // TODO
     private Player getRandomPlayerImpl() {
-        return null;
+        RandomPlayer rp = new RandomPlayer();
+        return rp;
     }
     
     // TODO
     private Player getWallFollowerPlayerImpl() {
-        return null;
+        WallPlayer wp = new WallPlayer();
+        return wp;
     }
     
     // TODO
